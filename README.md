@@ -164,5 +164,5 @@ no direction.
 
 ## License
 
-MIT, see [LICENSE](LICENSE). The bundled MCC/MNC data comes from Wikipedia
+Apache License 2.0, see [LICENSE](LICENSE). The bundled MCC/MNC data comes from Wikipedia
 (CC BY-SA 4.0).

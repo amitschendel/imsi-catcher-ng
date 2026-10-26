@@ -7,7 +7,7 @@ name = "imsi-catcher-ng"
 dynamic = ["version"]
 description = "Educational passive GSM analyser: decodes GSMTAP from gr-gsm into cells, paging, identities and signalling sessions"
 readme = "README.md"
-license = "MIT"
+license = "Apache-2.0"
 requires-python = ">=3.10"
 authors = [{ name = "Amit Schendel" }]
 keywords = ["gsm", "gsmtap", "gr-gsm", "rtl-sdr", "sdr", "imsi", "education"]
