@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+# Captures and outputs contain identifiers of real people: keep them out of git.
+*.pcap
+*.pcapng
+*.sqlite
+*.db
+*.jsonl
+*.csv
+captures/

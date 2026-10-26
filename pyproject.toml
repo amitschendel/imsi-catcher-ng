@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "imsi-catcher-ng"
+dynamic = ["version"]
+description = "Educational passive GSM analyser: decodes GSMTAP from gr-gsm into cells, paging, identities and signalling sessions"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Amit Schendel" }]
+keywords = ["gsm", "gsmtap", "gr-gsm", "rtl-sdr", "sdr", "imsi", "education"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Communications :: Telephony",
+    "Topic :: Education",
+]
+dependencies = []
+
+[project.optional-dependencies]
+tui = ["rich>=13"]
+dev = ["pytest>=8", "rich>=13"]
+
+[project.scripts]
+imsi-catcher = "imsicatcher.cli:main"
+
+[project.urls]
+Source = "https://github.com/amitschendel/imsi-catcher-ng"
+
+[tool.hatch.version]
+path = "src/imsicatcher/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/imsicatcher"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
